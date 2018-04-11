@@ -1,0 +1,14 @@
+[Unit]
+Description=vtrack - making your environment variables rad
+Documentation=https://vtrack.co.za
+After=network.target
+
+[Service]
+Environment=NODE_PORT=%i
+Type=simple
+User=davidm
+ExecStart=/usr/bin/node /home/davidm/vtracklinux/index.js
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
