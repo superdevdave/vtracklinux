@@ -7,7 +7,7 @@ After=network.target
 User=davdm
 Environment=localhost
 WorkingDirectory=/home/davdm/vtracklinux
-ExecStart=/home/davdm/.nvm/versions/node/v9.11.1/bin/node index.js
+ExecStart=/home/davdm/.nvm/versions/node/v9.11.1/bin/node /home/davdm/vtracklinux/index.js
 
 [Install]
 WantedBy=multi-user.target
