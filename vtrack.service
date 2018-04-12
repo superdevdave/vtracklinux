@@ -4,11 +4,10 @@ Documentation=https://vtrack.co.za
 After=network.target
 
 [Service]
-Environment=NODE_PORT=%i
-Type=simple
-User=davidm
-ExecStart=/home/davdm/.nvm/versions/v9.11.1/bin/node /home/davidm/vtracklinux/index.js
-Restart=on-failure
+User=davdm
+Environdavidmment=localhost
+WorkingDirectory=/home/davidm/vtracklinux
+ExecStart=/home/davdm/.nvm/versions/v9.11.1/bin/node index.js
 
 [Install]
 WantedBy=multi-user.target
