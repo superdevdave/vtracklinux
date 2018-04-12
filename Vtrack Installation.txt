@@ -25,18 +25,22 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | b
 nvm install node
 nvm use node
 
-Installing V-Track Client Agent
+Installing V-Track Client Agentls
 ------------------------------
 cd /home/
 sudo apt-get install git
-git clone https://github.com/vtracklinux/vtracklinux.git
-run the command whichnode to verify location of nodejs
+sudo git clone https://github.com/superdevdave/vtracklinux/
+run the command which node to verify location of nodejs
 navigate to vtracklinux folder
 run vi vtrack.service and modify path of node js on the ExecStart parameter
 
 cp /home/davidm/vtacklinux/vtrack.service /etc/systemd/
 
 sudo systemctl enable /etc/systemd/vtrack.service
+
+cd /home/davdm/vtracklinux
+
+sudo chown -R <yourusername> machine.jaon
 
 Known Issues
 -----------------------------
