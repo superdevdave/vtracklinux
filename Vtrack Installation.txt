@@ -3,21 +3,45 @@ System Requirements:
 
 NodeJs v8 or higher
 npm
+nvm
+curl
 git
 
 
 Installing Node
 ---------------
-
+cd /home/
 sudo apt-get update
+sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
+
+Installing Node using NVM (Recommended)
+-------------------------
+sudo apt install curl
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+nvm install node
+nvm use node
+
 Installing V-Track Client Agent
 ------------------------------
-
+cd /home/
+sudo apt-get install git
 git clone https://github.com/vtracklinux/vtracklinux.git
-npm install -g add-to-systemd
+run the command whichnode to verify location of nodejs
+navigate to vtracklinux folder
+run vi vtrack.service and modify path of node js on the ExecStart parameter
+
+cp /home/davidm/vtacklinux/vtrack.service /etc/systemd/
+
+sudo systemctl enable /etc/systemd/vtrack.service
+
+Known Issues
+-----------------------------
+1.Ubuntu returns unable to lock unable to lock the administration directory (/var/lib/dpkg/) are you root
+when installing application via curl
+Solution: Reboot Ubuntu system and try again.
 
 

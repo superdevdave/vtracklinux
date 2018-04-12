@@ -7,7 +7,7 @@ After=network.target
 Environment=NODE_PORT=%i
 Type=simple
 User=davidm
-ExecStart=/home/davdm/.nvm/versions/v9.11.1/bin/node /home/davidm/vtracklinux/index.js
+ExecStart=/usr/bin/node /home/davidm/vtracklinux/index.js
 Restart=on-failure
 
 [Install]
