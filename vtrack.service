@@ -6,7 +6,7 @@ After=network.target
 [Service]
 User=davdm
 Environdavidmment=localhost
-WorkingDirectory=/home/davidm/vtracklinux
+WorkingDirectory=/home/davdm/vtracklinux
 ExecStart=/home/davdm/.nvm/versions/node/v9.11.1/bin/node index.js
 
 [Install]
