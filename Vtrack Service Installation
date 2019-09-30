@@ -1,0 +1,9 @@
+Steps to install V-Track on Ubuntu:
+-----------------------------------
+1.Copy the whole folder to Home public and navigate to it or alternatively run the following commands on a removable device with in the provided folder
+
+2.sudo chmod +x ./buildme.sh
+
+3.sudo ./buildme.sh
+
+4.If succesful it should give a succesful message that vtrack.service has been added to systemd and it should run on next restart

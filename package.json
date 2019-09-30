@@ -16,9 +16,9 @@
     "hex-to-dec": "^1.0.1",
     "jsonfile": "^4.0.0",
     "linux-app-list": "^1.0.1",
-    "node-notifier": "^5.2.1",
     "ping-lite": "^1.0.2",
-    "systeminformation": "^3.37.7"
+    "systeminformation": "^3.37.7",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {},
   "repository": {

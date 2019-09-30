@@ -1,13 +1,13 @@
 [Unit]
-Description=vtrack - making your environment variables rad
-Documentation=https://vtrack.co.za
+Description=Run VTrack at startup in the background as service via systemd
+Documentation=https://wwww.vtracksolution.co.za
 After=network.target
 
 [Service]
-User=davdm
-Environment=localhost
-WorkingDirectory=/home/davdm/vtracklinux
-ExecStart=/home/davdm/.nvm/versions/node/v9.11.1/bin/node /home/davdm/vtracklinux/index.js
+WorkingDirectory=/etc/VTrack
+ExecStart=/bin/bash /etc/VTrack/run.sh
+Restart=on-abort
+
 
 [Install]
 WantedBy=multi-user.target
