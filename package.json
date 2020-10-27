@@ -17,7 +17,7 @@
     "jsonfile": "^4.0.0",
     "linux-app-list": "^1.0.1",
     "ping-lite": "^1.0.2",
-    "systeminformation": "^3.37.7",
+    "systeminformation": "^4.27.11",
     "uuid": "^3.3.3"
   },
   "devDependencies": {},
